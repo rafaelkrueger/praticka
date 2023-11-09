@@ -1,0 +1,22 @@
+{
+    "residential": {
+      "services": [
+        "LIMPEZA DIARIA, SEMANAL E MENSAL",
+        "FAXINA GERAL",
+        "PEDIDOS AVULSOS",
+        "MANUTENCÃO GERAL",
+        "PINTURA",
+        "HIGIENIZAÇAO DE SOFAS"
+      ]
+    },
+    "commercial": {
+      "services": [
+        "LIMPEZA DIARIA, SEMANAL E MENSAL",
+        "PÓS OBRA",
+        "PEDIDOS AVULSOS",
+        "MANUTENCÃO GERAL",
+        "PINTURA",
+        "HIGIENIZAÇAO DE SOFAS"
+      ]
+    }
+  }
