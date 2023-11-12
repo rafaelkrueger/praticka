@@ -21,7 +21,8 @@ export const NavbarLogoContainer = styled.div`
     display: flex;
     flex-direction: column;
     color: white;
-    width: 15%;
+    width: 25%;
+    margin-left: -3.5%;
 `;
 
 export const NavbarLogoContainerTitle = styled.h2`
@@ -31,7 +32,7 @@ export const NavbarLogoContainerTitle = styled.h2`
 
 export const NavbarLogoContainerSubTitle = styled.p`
     margin-top: -19px;
-    margin-left: 13%;
+    margin-left: 3%;
 `;
 
 export const NavbarLinkListContainer = styled.div`

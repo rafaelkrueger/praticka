@@ -3,11 +3,15 @@ import styled from 'styled-components'
 export const SectionContainer = styled.div`
     display:flex;
     width: 100%;
+    @media (max-width: 600px) {
+        margin-left:-6%;
+    }
 `
 
 export const SectionImage = styled.img`
     min-width: 100%;
-    min-height: 50%;
+    min-height: 30%;
+    height: 640px;
 `
 
 export const SectionContent = styled.div`
@@ -26,6 +30,10 @@ export const SectionContent = styled.div`
 export const SectionContentLeft = styled.div`
     width: 100%;
     margin-top: -3%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    padding: 10px;
+    border-radius: 10px;
  `
 
 export const SectionContentRight= styled.div`
@@ -53,6 +61,7 @@ export const SectionContentLeftText = styled.p`
     color: #234480;
     text-align: left;
     font-weight: 500;
+    margin-left:50px;
 `
 
 export const SectionContentRightButtonSpan = styled.span`

@@ -41,6 +41,9 @@ export const MainContainerRightCardHeaderCard = styled.div`
     height: 35px;
     padding-top: 5px;
     font-size: 15pt;
+    &:hover{
+        cursor: pointer;
+    }
     @media (max-width: 600px) {
         width: 120px;
         height: 35px;

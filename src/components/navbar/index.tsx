@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { NavbarContainer, NavbarLinkListContainer, NavbarLinkListElement, NavbarLogo, NavbarLogoContainer, NavbarLogoContainerSubTitle, NavbarLogoContainerTitle, NavbarResponsiveMenu, NavbarResponsiveMenuLinks } from './styles.ts';
 import Logo from '../../images/logo.png'
 import * as Ai from 'react-icons/ai'
-import { useNavigate } from 'react-router-dom';
 
 export const NavbarComponent: React.FC = () => {
     const [active, setActive] = useState(false)
-    const navigate = useNavigate()
+    const redirectEmail = () =>{
+        console.log("teste")
+        window.location.href = 'mailto:pratyka.dominio@gmail.com';
+    }
 
   return (
     <NavbarContainer>
@@ -21,7 +23,7 @@ export const NavbarComponent: React.FC = () => {
             <NavbarLinkListElement to='/'>Home</NavbarLinkListElement>
             <NavbarLinkListElement to='/page/comercial'>Comercial</NavbarLinkListElement>
             <NavbarLinkListElement to='/page/residencial'>Residencial</NavbarLinkListElement>
-            <NavbarLinkListElement><Ai.AiOutlineMail size={29} /></NavbarLinkListElement>
+            <NavbarLinkListElement onClick={redirectEmail}><Ai.AiOutlineMail size={29} /></NavbarLinkListElement>
         </NavbarLinkListContainer>
         </>
         :
@@ -33,7 +35,7 @@ export const NavbarComponent: React.FC = () => {
                 <NavbarLinkListElement to='/'>Home</NavbarLinkListElement>
                 <NavbarLinkListElement to='/page/comercial'>Comercial</NavbarLinkListElement>
                 <NavbarLinkListElement to='/page/residencial'>Residencial</NavbarLinkListElement>
-                <NavbarLinkListElement><Ai.AiOutlineMail size={29} /></NavbarLinkListElement>
+                <NavbarLinkListElement onClick={redirectEmail}><Ai.AiOutlineMail size={29} /></NavbarLinkListElement>
             </NavbarResponsiveMenuLinks>
             :''
         }

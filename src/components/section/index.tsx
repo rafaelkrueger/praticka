@@ -24,7 +24,7 @@ export const SectionComponent: React.FC = () => {
                         <h1 style={{marginLeft:window.screen.availWidth > 600?'':'28px'}}>Conte Conosco</h1>
                     {window.screen.availWidth > 600?<hr style={{transform: 'rotate(90deg)'}}></hr>:''}
                     </div>
-                    <div style={{display:'flex'}}>
+                    <div style={{display:'flex', marginLeft:'50px'}}>
                     <img src={Zap} style={{width:'50px', height:'40px'}}/>
                     <p style={{fontSize:'15pt', fontWeight:'500', marginTop:'1%', marginLeft:'4%'}}>(11) 97193 8148</p>
                     </div>
